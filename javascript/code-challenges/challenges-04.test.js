@@ -25,9 +25,13 @@ const updateAnimal = (arr, callback) => {
   let newArr = arr.map(x => callback(x))
   return newArr
 
+  let newArr1 = [];
+arr.forEach(x => newArr.push(callback(x)));
 
 
 };
+console.log(arr)
+console.log(newArr)
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
