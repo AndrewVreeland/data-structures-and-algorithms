@@ -144,7 +144,7 @@ const reversedString = (str) => {
     console.log('ACC', acc);
     console.log('cur', cur);
 
-    return  arr.join('')
+    return arr.join('')
 
   }, '')
 }
@@ -202,13 +202,10 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  const selectChildren = arr.reduce((acc, c) => {
-    acc + c.children
-    return acc
-  }, [])
-  return countNumberOfChildren
+  let intialValue = 0
+  const numChildren = characters.reduce((acc, curr) => acc + (curr.children?.length ?? 0), intialValue);
+  return numChildren
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
@@ -352,7 +349,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
