@@ -124,10 +124,9 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let arr = []
-  const pattern = /\b[A-Z][a-z]*\b/g;
-  str.match(pattern)? arr.push(str) : null;
-  return arr
+  const pattern = /[A-Z][a-z]*/g;
+  let capitals = str.match(pattern);
+  return capitals || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
