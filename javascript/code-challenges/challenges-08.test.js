@@ -53,24 +53,16 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  charArray.sort((a, b) => {
-    const aNumChildren = a.children.length;
-    const bNumChildren = b.children.length;
-    if (aNumChildren < bNumChildren) {
-      return -1;
-    } else if (aNumChildren > bNumChildren) {
-      return 1;
+
+  return charArray.sort((a,b) => {
+    if(a.children.length < b.children.length){
+      return -1
+    } else if (a.children.length > b.children.length){
+      return 1
     } else {
-      if (a.house < b.house) {
-        return -1;
-      } else if (a.house > b.house) {
-        return 1;
-      } else {
-        return 0;
-      }
+      return a.house > b.house ? 1 : -1
     }
   });
-  return charArray;
 };
 
 
