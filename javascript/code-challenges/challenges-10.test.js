@@ -34,8 +34,8 @@ const findMax = (matrix) => {
       newArr.push(number)
     })
   })
-  newArr.forEach(finalNumbers =>{
-    if (finalNumbers > largest){
+  newArr.forEach(finalNumbers => {
+    if (finalNumbers > largest) {
       largest = finalNumbers
     }
   })
@@ -109,7 +109,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   let arr = [];
-  for (let i = 0; i < hours.length; i++){
+  for (let i = 0; i < hours.length; i++) {
     // Create a new object for each hour
     let obj = {
       sales: `${data[i]} cookies`,
@@ -143,7 +143,18 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let newArr = []
+  let totalArr = []
+  arr[2].items.forEach(element => {
+    return newArr.push(Object.values(element))
+    console.log(Object.values(element))
+  })
+  newArr.forEach(index => {
+    return totalArr.push(index[1]);
+
+  })
+  return totalArr[1]
+
 };
 
 /* ------------------------------------------------------------------------------------------------
