@@ -120,7 +120,16 @@ const salesData = (hours, data) => {
   }
   return arr;
 };
-
+/*
+let salesArr = [];
+data.forEach((cookieVal, idx)=>{
+  salesArr.push({
+    sales: `${data[idx]} cookies`,
+    time: hours[idx]
+  });
+  return salesArr
+});
+*/
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -147,7 +156,6 @@ const howManyTreats = (arr) => {
   let totalArr = []
   arr[2].items.forEach(element => {
     return newArr.push(Object.values(element))
-    console.log(Object.values(element))
   })
   newArr.forEach(index => {
     return totalArr.push(index[1]);
@@ -176,7 +184,11 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
+  board.forEach((row1)=>{
+    row1.forEach((col1)=>{
+      return col1.includes('#')? hit : miss
+    })
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -312,7 +324,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const battleshipData = [
     ['#', ' ', '#', ' '],
     ['#', ' ', '#', ' '],
