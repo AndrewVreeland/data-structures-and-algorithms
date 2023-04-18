@@ -1,10 +1,6 @@
 # Data Structures and Algorithms
 
-
-
-
-
-
+[lab01 Read ME](./images_for_lab/lab01.md)
 
 
 
