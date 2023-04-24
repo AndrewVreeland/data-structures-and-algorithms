@@ -31,7 +31,9 @@ No whiteboard for this
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-1. To add a new node to the linked list I first created a new node then I checked to see if the head
+1. To add a new node to the linked list I first created a new node then I checked to see if the head was null
+2. if the head did not equal null then it was asigned the value of the new node.
+3. this gave us an 0(1) for space as the size of the node is the saame each time the code runs. and an 0(n) for timeb because there could be infinite nodes in the linked list that the expression has to itterate over to see if the value is there.
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
