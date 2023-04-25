@@ -27,4 +27,97 @@ public class LinkedListTest
 
     }
 
+
+  @Test
+  void testAppendNode() {
+    // Test empty list
+    linkedList.appendNode(1);
+    assertEquals(1, linkedList.head.value);
+    assertNull(linkedList.head.next);
+
+    // Test non-empty list
+    linkedList.appendNode(2);
+    linkedList.appendNode(3);
+    assertEquals(1, linkedList.head.value);
+    assertEquals(2, linkedList.head.next.value);
+    assertEquals(3, linkedList.head.next.next.value);
+    assertNull(linkedList.head.next.next.next);
+  }
+
+  @Test
+  void testInsertBefore() {
+    // Test inserting before head node
+    linkedList.appendNode(1);
+    linkedList.appendNode(2);
+    linkedList.insertBefore(1, 0);
+    assertEquals(0, linkedList.head.value);
+    assertEquals(1, linkedList.head.next.value);
+    assertEquals(2, linkedList.head.next.next.value);
+    assertNull(linkedList.head.next.next.next);
+
+    // Test inserting before middle node
+    linkedList.insertBefore(1, 3);
+    assertEquals(0, linkedList.head.value);
+    assertEquals(3, linkedList.head.next.value);
+    assertEquals(1, linkedList.head.next.next.value);
+    assertEquals(2, linkedList.head.next.next.next.value);
+    assertNull(linkedList.head.next.next.next.next);
+
+    // Test inserting before last node
+    linkedList.insertBefore(2, 4);
+    assertEquals(0, linkedList.head.value);
+    assertEquals(3, linkedList.head.next.value);
+    assertEquals(1, linkedList.head.next.next.value);
+    assertEquals(4, linkedList.head.next.next.next.value);
+    assertEquals(2, linkedList.head.next.next.next.next.value);
+    assertNull(linkedList.head.next.next.next.next.next);
+  }
+
+  @Test
+  void testInsertBeforeWithException() {
+    // Test inserting before non-existent value
+    linkedList.appendNode(1);
+    linkedList.appendNode(2);
+    assertThrows(IllegalArgumentException.class, () -> linkedList.insertBefore(3, 0));
+  }
+
+  @Test
+  void testInsertAfter() {
+    // Test inserting after head node
+    linkedList.appendNode(1);
+    linkedList.appendNode(2);
+    linkedList.insertAfter(1, 3);
+    assertEquals(1, linkedList.head.value);
+    assertEquals(3, linkedList.head.next.value);
+    assertEquals(2, linkedList.head.next.next.value);
+    assertNull(linkedList.head.next.next.next);
+
+    // Test inserting after middle node
+    linkedList.insertAfter(3, 4);
+    assertEquals(1, linkedList.head.value);
+    assertEquals(3, linkedList.head.next.value);
+    assertEquals(4, linkedList.head.next.next.value);
+    assertEquals(2, linkedList.head.next.next.next.value);
+    assertNull(linkedList.head.next.next.next.next);
+
+    // Test inserting after last node
+    linkedList.insertAfter(2, 5);
+    assertEquals(1, linkedList.head.value);
+    assertEquals(3, linkedList.head.next.value);
+    assertEquals(4, linkedList.head.next.next.value);
+    assertEquals(2, linkedList.head.next.next.next.value);
+    assertEquals(5, linkedList.head.next.next.next.next.value);
+    assertNull(linkedList.head.next.next.next.next.next);
+  }
+
+  @Test
+  void testInsertAfterWithException() {
+    // Test inserting after non-existent value
+    linkedList.appendNode(1);
+    linkedList.appendNode(2);
+    assertThrows(IllegalArgumentException.class, () -> linkedList.insertAfter(3, 4));
+  }
+
 }
+
+

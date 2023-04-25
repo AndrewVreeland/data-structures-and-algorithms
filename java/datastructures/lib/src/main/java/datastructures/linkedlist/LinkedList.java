@@ -1,24 +1,91 @@
 
 package datastructures.linkedlist;
 
-public class LinkedList{
+public class LinkedList {
   static Node head = null;
 // Node tail =null; optional
 
 
-  public static void insertFront(int value){
-    // TODO: implement me!
-    // add a new node as the head of the LinkedList
-    Node  newNode = new Node(value);
-  if (head == null){
-    head = newNode;
-  }else{
-    newNode.next = head;
-    head = newNode;
-  }
+
+  public void insertAfter(int value, int newValue)
+throw IllegalArgumentException{
+    if(head == null){
+      throw new IllegalArgumentException("value not in list")
+    }
+    Node temp = head;
+    Node prevNode = null;
+    Node newNode = new Node(newValue)
+
+    if (temp.value == value){
+      newNode.next = temp;
+      head = newNode;
+      return;
+    }
+
+    while(temp.next != null){
+      prevTemp = temp;
+      temp = temp.next;
+      if(prevTemp.value == value){
+        newNode.next = temp;
+        prevTemp.next = newNode;
+        return;
+      }
+    }
+
   }
 
-  public static boolean includes(int value){
+  public void appendNode(int value){
+    Node newNode = new Node(value);
+    if(head == null){
+      head = newNode;
+    }else{
+      Node temp = head;
+      while(temp.next != null){
+        temp = temp.next
+      }
+      temp.next = newNode;
+    }
+  }
+  public void insertBefore(int value, int newValue)
+    throw IllegalArgumentException {
+    if (head == null) {
+      throw new IllegalArgumentException("value not in list")
+    }
+    Node temp = head;
+    Node prevNode = null;
+    Node newNode = new Node(newValue)
+
+    if (temp.value == value) {
+      newNode.next = temp;
+      head = newNode;
+      return;
+    }
+
+    while (temp.next != null) {
+      prevTemp = temp;
+      temp = temp.next;
+      if (temp.value == value) {
+        newNode.next = temp;
+        prevTemp.next = newNode;
+        return;
+      }
+    }
+
+  }
+
+  public static void insertFront(int value) {
+    // TODO: implement me!
+    // add a new node as the head of the LinkedList
+    Node newNode = new Node(value);
+    if (head == null) {
+      head = newNode;
+    } else {
+      newNode.next = head;
+      head = newNode;
+    }
+  }
+
+  public static boolean includes(int value) {
 // TODO: implement me!
     // tell whether or not there is a node with the given value in the linked list
     Node temp = head;
@@ -45,6 +112,7 @@ public class LinkedList{
     }
     return result.toString();
   }
+
   public static void main(String[] args) {
     // Example usage
     LinkedList myLL = new LinkedList();

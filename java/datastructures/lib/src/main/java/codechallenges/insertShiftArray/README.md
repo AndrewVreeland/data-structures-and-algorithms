@@ -3,3 +3,4 @@ Write a function called insertShiftArray which takes an array and a new value to
 # Whiteboard process
 
 ![img_1.png](img_1.png)
+![LinkedList_WhiteBoards.png](..%2F..%2Fdatastructures%2FLinkedList_WhiteBoards.png)
