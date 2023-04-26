@@ -26,6 +26,29 @@ public class LinkedList  {
     throw new IllegalArgumentException("value not in list");
   }
 
+  public void kthFromEnd(int k)throw IllegalArgumentException{
+    if(head == null){
+      throw new IllegalArgumentException("value not in list")
+    }
+    Node temp = head;
+    Node prevTemp = head;
+    int i = 0;
+
+    while (temp.next != null && i < k) {
+      for (int j = 0; j < k; j++) {
+        if (temp.next == null) break;
+        temp = temp.next;
+      }
+      i += k; // Update 'i' by adding 'k' after each iteration of the inner loop
+    }
+
+    while(temp != null){
+      prevTemp = prevTemp.next;
+      temp = temp.next;
+    }
+    return preTemp.value;
+  }
+
   public void appendNode(int value){
     Node newNode = new Node(value);
     if(head == null){
@@ -117,6 +140,9 @@ public class LinkedList  {
     System.out.println(includes(3)); // Output: true
     System.out.println(includes(6)); // Output: false
   }
+
+
+
 }
 
 //LinkedList myLL - new LinkedList();
