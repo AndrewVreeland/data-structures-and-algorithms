@@ -1,37 +1,29 @@
 
 package datastructures.linkedlist;
 
-public class LinkedList {
+public class LinkedList  {
   static Node head = null;
 // Node tail =null; optional
 
 
 
-  public void insertAfter(int value, int newValue)
-throw IllegalArgumentException{
-    if(head == null){
-      throw new IllegalArgumentException("value not in list")
+  public void insertAfter(int value, int newValue) throws IllegalArgumentException {
+    if (head == null) {
+      throw new IllegalArgumentException("value not in list");
     }
     Node temp = head;
-    Node prevNode = null;
-    Node newNode = new Node(newValue)
+    Node newNode = new Node(newValue);
 
-    if (temp.value == value){
-      newNode.next = temp;
-      head = newNode;
-      return;
-    }
-
-    while(temp.next != null){
-      prevTemp = temp;
-      temp = temp.next;
-      if(prevTemp.value == value){
-        newNode.next = temp;
-        prevTemp.next = newNode;
+    while (temp != null) {
+      if (temp.value == value) {
+        newNode.next = temp.next;
+        temp.next = newNode;
         return;
       }
+      temp = temp.next;
     }
 
+    throw new IllegalArgumentException("value not in list");
   }
 
   public void appendNode(int value){
@@ -41,19 +33,18 @@ throw IllegalArgumentException{
     }else{
       Node temp = head;
       while(temp.next != null){
-        temp = temp.next
+        temp = temp.next;
       }
       temp.next = newNode;
     }
   }
-  public void insertBefore(int value, int newValue)
-    throw IllegalArgumentException {
+  public void insertBefore(int value, int newValue) throws IllegalArgumentException {
     if (head == null) {
-      throw new IllegalArgumentException("value not in list")
+      throw new IllegalArgumentException("value not in list");
     }
     Node temp = head;
-    Node prevNode = null;
-    Node newNode = new Node(newValue)
+    Node prevTemp = null;
+    Node newNode = new Node(newValue);
 
     if (temp.value == value) {
       newNode.next = temp;
