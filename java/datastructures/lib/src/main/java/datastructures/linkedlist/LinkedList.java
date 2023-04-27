@@ -3,6 +3,7 @@ package datastructures.linkedlist;
 
 public class LinkedList  {
   static Node head = null;
+  private LinkedList next;
 // Node tail =null; optional
 
 
@@ -86,6 +87,26 @@ public class LinkedList  {
     }
 
   }
+
+  public LinkedList zipLists(LinkedList l1, LinkedList l2) {
+    LinkedList dummy = new LinkedList();
+    LinkedList curr = dummy;
+    while (l1 != null && l2 != null) {
+      curr.next = l1;
+      l1 = l1.next;
+      curr = curr.next;
+      curr.next = l2;
+      l2 = l2.next;
+      curr = curr.next;
+    }
+    if (l1 != null) {
+      curr.next = l1;
+    } else {
+      curr.next = l2;
+    }
+    return dummy.next;
+  }
+
 
   public static void insertFront(int value) {
     // TODO: implement me!
