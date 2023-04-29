@@ -27,9 +27,9 @@ public class LinkedList  {
     throw new IllegalArgumentException("value not in list");
   }
 
-  public void kthFromEnd(int k)throw IllegalArgumentException{
+  public void kthFromEnd(int k)throws IllegalArgumentException{
     if(head == null){
-      throw new IllegalArgumentException("value not in list")
+      throw new IllegalArgumentException("value not in list");
     }
     Node temp = head;
     Node prevTemp = head;
@@ -47,7 +47,7 @@ public class LinkedList  {
       prevTemp = prevTemp.next;
       temp = temp.next;
     }
-    return preTemp.value;
+
   }
 
   public void appendNode(int value){
