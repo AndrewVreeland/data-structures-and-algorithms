@@ -1,4 +1,5 @@
-package datastructures.linkedlist;
+package stackAndQueue;
+
 
 import org.testng.annotations.Test;
 
@@ -9,9 +10,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StackTest {
 
+  Stack<Integer> stack = new Stack<Integer>();
   @Test
   public void testPush() {
-    Stack stack = new Stack();
+
     stack.push(1);
     stack.push(2);
     stack.push(3);
@@ -22,7 +24,7 @@ public class StackTest {
 
   @Test
   public void testPop() throws Exception {
-    Stack stack = new Stack();
+
     stack.push(1);
     stack.push(2);
     stack.push(3);
@@ -42,7 +44,7 @@ public class StackTest {
 
   @Test
   public void testPeek() throws Exception {
-    Stack stack = new Stack();
+
     stack.push(1);
     stack.push(2);
     stack.push(3);
@@ -55,7 +57,7 @@ public class StackTest {
 
   @Test
   public void testIsEmpty() {
-    Stack stack = new Stack();
+
 
     assertTrue(stack.isEmpty());
     stack.push(1);
@@ -63,4 +65,6 @@ public class StackTest {
     stack.pop();
     assertTrue(stack.isEmpty());
   }
+
+
 }
