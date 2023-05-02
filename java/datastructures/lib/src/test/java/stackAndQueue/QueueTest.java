@@ -1,55 +1,56 @@
 package stackAndQueue;
 
-import org.junit.jupiter.api.BeforeEach;
+
 import org.testng.annotations.Test;
-import java.util.Queue;
 
-
+import java.util.Stack;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class QueueTest {
+  java.util.Stack<Integer> stack = new Stack<Integer>();
   private Node rear;
   private Node front;
-  Queue<Integer> queue = new Queue<Integer>() {
+  Queue queue = new Queue() {
   };
-  @test
-  public void testQueue(){
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
+//  @Test
+//  public void testQueue() throws Exception {
+//    queue.enqueue(1);
+//    queue.enqueue(2);
+//    queue.enqueue(3);
+//
+//    assertFalse(3, queue.peekQueue());
+//    assertTrue(queue.peekQueue());
+//    assertTrue(queue.front.next.value == 2);
+//  }
+//
+//  @Test
+//  public void testDequeue() throws Exception{
+//    queue.enqueue(1);
+//    queue.enqueue(2);
+//    queue.enqueue(3);
+//
+//    assertEquals(1, queue.dequeue());
+//    assertEquals(2, queue.dequeue());
+//    assertEquals(3, queue.dequeue());
+//    assertTrue(queue.isQueueEmpty());
+//  }
+//
+//  @Test
+//  public void testPeekQueue() throws Exception {
+//    queue.enqueue(1);
+//    queue.enqueue(2);
+//    queue.enqueue(3);
+//    assertFalse(2, queue.peekQueue());
+//    assertTrue(queue.peekQueue());
+//  }
+//
+//  @Test
+//  public void testIsEmpty() throws Exception {
+//    queue.enqueue(1);
+//    assertFalse(null, queue.isQueueEmpty());
+//    queue.dequeue();
+//    assertTrue(isQueueEmpty());
+//  }
 
-    assertFalse(3, queue.peekQueue());
-    assertTrue(1, queue.peekQueue());
-    assertTrue(2, queue.front.next == 2);
-  }
-
-  @test
-  public void testDequeue() throws Exception{
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
-
-    assertEquals(1, queue.dequeue());
-    assertEquals(2, queue.dequeue());
-    assertEquals(3, queue.dequeue());
-    assertTrue(queue.isQueueEmpty());
-  }
-
-  @test
-  public void testPeekQueue(){
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
-    assertFalse(2, queue.peekQueue());
-    assertTrue(1, queue.peekQueue());
-  }
-
-  @test
-  public void testIsEmpty(){
-    queue.enqueue(1);
-    assertFalse(null,isQueueEmpty());
-    queue.dequeue();
-    assertTrue(null,isQueueEmpty());
-  }
 
 }

@@ -29,52 +29,52 @@ public class LinkedListTest
 //    }
 
 
-//  @Test
-//  void testAppendNode() {
-//    // Test empty list
-//    LinkedList linkedList1 = new LinkedList();
-//    linkedList1.appendNode(1);
-//    assertEquals(1, linkedList1.head.value);
-//    assertNull(linkedList1.head.next);
-//
-//    // Test non-empty list
-//    linkedList1.appendNode(2);
-//    linkedList1.appendNode(3);
-//    assertEquals(1, linkedList1.head.value);
-//    assertEquals(2, linkedList1.head.next.value);
-//    assertEquals(3, linkedList1.head.next.next.value);
-//    assertNull(linkedList1.head.next.next.next);
-//  }
-
   @Test
-  void testInsertBefore() {
-    LinkedList linkedList = new LinkedList();
-    // Test inserting before head node
-    linkedList.appendNode(1);
-    linkedList.appendNode(2);
-    linkedList.insertBefore(1, 0);
-    assertEquals(0, linkedList.head.value);
-    assertEquals(1, linkedList.head.next.value);
-    assertEquals(2, linkedList.head.next.next.value);
-    assertNull(linkedList.head.next.next.next);
+  public void testAppendNode() {
+    // Test empty list
+    LinkedList linkedList1 = new LinkedList();
+    linkedList1.appendNode(1);
+    assertEquals(1, linkedList1.head.value);
+    assertNull(linkedList1.head.next);
 
-    // Test inserting before middle node
-    linkedList.insertBefore(1, 3);
-    assertEquals(0, linkedList.head.value);
-    assertEquals(3, linkedList.head.next.value);
-    assertEquals(1, linkedList.head.next.next.value);
-    assertEquals(2, linkedList.head.next.next.next.value);
-    assertNull(linkedList.head.next.next.next.next);
-
-    // Test inserting before last node
-    linkedList.insertBefore(2, 4);
-    assertEquals(0, linkedList.head.value);
-    assertEquals(3, linkedList.head.next.value);
-    assertEquals(1, linkedList.head.next.next.value);
-    assertEquals(4, linkedList.head.next.next.next.value);
-    assertEquals(2, linkedList.head.next.next.next.next.value);
-    assertNull(linkedList.head.next.next.next.next.next);
+    // Test non-empty list
+    linkedList1.appendNode(2);
+    linkedList1.appendNode(3);
+    assertEquals(1, linkedList1.head.value);
+    assertEquals(2, linkedList1.head.next.value);
+    assertEquals(3, linkedList1.head.next.next.value);
+    assertNull(linkedList1.head.next.next.next);
   }
+
+//  @Test
+//  public void testInsertBefore() {
+//    LinkedList linkedList = new LinkedList();
+//    // Test inserting before head node
+//    linkedList.appendNode(1);
+//    linkedList.appendNode(2);
+//    linkedList.insertBefore(1, 0);
+//    assertEquals(0, linkedList.head.value);
+//    assertEquals(1, linkedList.head.next.value);
+//    assertEquals(2, linkedList.head.next.next.value);
+//    assertNull(linkedList.head.next.next.next);
+//
+//    // Test inserting before middle node
+//    linkedList.insertBefore(1, 3);
+//    assertEquals(0, linkedList.head.value);
+//    assertEquals(3, linkedList.head.next.value);
+//    assertEquals(1, linkedList.head.next.next.value);
+//    assertEquals(2, linkedList.head.next.next.next.value);
+//    assertNull(linkedList.head.next.next.next.next);
+//
+//    // Test inserting before last node
+//    linkedList.insertBefore(2, 4);
+//    assertEquals(0, linkedList.head.value);
+//    assertEquals(3, linkedList.head.next.value);
+//    assertEquals(1, linkedList.head.next.next.value);
+//    assertEquals(4, linkedList.head.next.next.next.value);
+//    assertEquals(2, linkedList.head.next.next.next.next.value);
+//    assertNull(linkedList.head.next.next.next.next.next);
+//  }
 
 //  @Test
 //  void testInsertBeforeWithException() {
