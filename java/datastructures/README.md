@@ -2,7 +2,7 @@
 Lab 11 two stacks working in tandum to be a queue
 
 ## Whiteboard Process
-[codeChallenge11PseudoCode](..%2Fimages_for_lab%2FcodeChallenge11PseudoCode%20-%20Copy.png)
+![codeChallenge11PseudoCode.png](images%2FcodeChallenge11PseudoCode.png)
 
 ## Approach & Efficiency
 The Big O for my functions would be O(1) for space as you are not  creating new nodes
@@ -21,13 +21,22 @@ WHITE BOARD ONLY CHALLENGE
 
 
 # Lab 12
-<!-- Description of the challenge -->
-
+## enqueue
+Arguments: animal
+animal can be either a dog or a cat object.
+It must have a species property that is either "cat" or "dog"
+It must have a name property that is a string.
+## dequeue
+Arguments: pref
+pref can be either "dog" or "cat"
+Return: either a dog or a cat, based on preference.
+If pref is not "dog" or "cat" then return null.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-
+![code challange 12.png](images%2Fcode%20challange%2012.png)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+I spent about an hour and a half on this one. I just couldnt wrap my head around the dequeue functionality. looking forward to the review of this tomorrow
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+did not reach a solution
