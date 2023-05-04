@@ -4,7 +4,7 @@ import codechallenges.stackAndQueue.Node;
 
 
 
-public class PseudoQueue {
+public class PseudoQueue extends Stack {
 
 
 
@@ -13,10 +13,11 @@ public class PseudoQueue {
 
 
 
-  public void enqueue(int newValue) throws Exception {
+  public void enqueue(int newValue)  throws Exception {
 
 
-    if (stack1 == null) {
+    if (stack1.isEmpty()) {
+      stack1.push(newValue);
       return; }
 
     int value;
@@ -32,8 +33,6 @@ public class PseudoQueue {
       value = stack2.pop();
       stack1.push(value);
     }
-
-
   }
 
   public int dequeue() throws Exception {
