@@ -64,4 +64,17 @@ I spent about an hour and a half on this one. I just couldnt wrap my head around
 did not reach a solution
 
 # Lab 13
+Write a function called validate brackets  representing whether or not the brackets in the string are balanced
 
+There are 3 types of brackets:
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+Input   	Output
+ {}	       TRUE
+{(})       FALSE
+## WhiteBoard Process
+![codeChallenege13.png](..%2Fimages_for_lab%2FcodeChallenege13.png)
+## Solution
+I went with a hash map for the solution to this problem.
