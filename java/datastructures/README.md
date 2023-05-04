@@ -1,3 +1,23 @@
+# Lab 10
+implement a Stack and Queue that utilizes all of their own methods. they must live in seperate classes.
+
+## Whiteboard proccess
+
+
+## Approach & Efficiency
+Had to go back and rework alot of this code due to issues with linter not working.
+not very effcient as this should have been done days ago
+
+
+## solution
+queue.enqueue(1);
+isQueueEmpty();
+queue.dequeue();
+
+stack.push(1);
+stack.isEmpty();
+stack.pop();
+
 # Lab 11
 Lab 11 two stacks working in tandum to be a queue
 
@@ -14,10 +34,12 @@ you have to pop everything off and push it into the other queue. a similar proce
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-WHITE BOARD ONLY CHALLENGE
+
+PseudoQueue queue = new PseudoQueue();
+queue.enqueue(1); ---> currently not funcitoning the values are not being added to the stack when this method is called.
+queue.dequeue();
 
 
-111
 
 
 # Lab 12
