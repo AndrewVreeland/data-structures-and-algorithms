@@ -1,5 +1,5 @@
 # Lab 10
-implement a Stack and Queue that utilizes all of their own methods. they must live in seperate classes.
+implement a Stack and Queue that utilizes all of their own methods. they must live in separate classes.
 
 ## Whiteboard proccess
 
@@ -62,3 +62,6 @@ I spent about an hour and a half on this one. I just couldnt wrap my head around
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 did not reach a solution
+
+# Lab 13
+
