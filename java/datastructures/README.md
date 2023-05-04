@@ -1,3 +1,23 @@
+# Lab 10
+implement a Stack and Queue that utilizes all of their own methods. they must live in seperate classes.
+
+## Whiteboard proccess
+
+
+## Approach & Efficiency
+Had to go back and rework alot of this code due to issues with linter not working.
+not very effcient as this should have been done days ago
+
+
+## solution
+queue.enqueue(1);
+isQueueEmpty();
+queue.dequeue();
+
+stack.push(1);
+stack.isEmpty();
+stack.pop();
+
 # Lab 11
 Lab 11 two stacks working in tandum to be a queue
 
