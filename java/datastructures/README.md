@@ -1,5 +1,7 @@
 # Lab 10
+
 implement a Stack and Queue that utilizes all of their own methods. they must live in separate classes.
+
 
 ## Whiteboard proccess
 
