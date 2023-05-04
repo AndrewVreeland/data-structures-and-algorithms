@@ -1,8 +1,8 @@
 
-package datastructures.linkedlist;
+package codechallenges.linkedlist;
 
 public class LinkedList  {
-  static Node head = null;
+  public static Node head = null;
   private LinkedList next;
 // Node tail =null; optional
 

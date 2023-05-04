@@ -1,13 +1,13 @@
-package datastructures.linkedlist;
-
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+package java.datastructures.linkedlist;
+import codechallenges.linkedlist.LinkedList;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class LinkedListTest
 {
 
-  @Test void testAMethod()
+  @Test
+  void testAMethod()
     {
       LinkedList sut = new LinkedList();
       System.out.println(sut);
