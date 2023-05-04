@@ -1,4 +1,4 @@
-package stackAndQueue;
+package codechallenges.stackAndQueue;
 
 public class Stack {
   private Node top;

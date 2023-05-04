@@ -1,4 +1,4 @@
-package datastructures.linkedlist;
+package codechallenges.linkedlist;
 
 public class Node {
   public int value;
