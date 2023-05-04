@@ -14,8 +14,10 @@ you have to pop everything off and push it into the other queue. a similar proce
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-WHITE BOARD ONLY CHALLENGE
 
+PseudoQueue queue = new PseudoQueue();
+queue.enqueue(1); ---> currently not funcitoning the values are not being added to the stack when this method is called.
+queue.dequeue();
 
 
 
