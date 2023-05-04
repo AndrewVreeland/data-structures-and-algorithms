@@ -29,7 +29,7 @@ public class Stack {
   // Peek method
   public int peek() throws Exception {
     if (top == null) {
-      throw new Exception("Stack is empty");
+      return 0;
     } else {
       return top.value;
     }

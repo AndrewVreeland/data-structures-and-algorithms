@@ -36,28 +36,29 @@ public class PseudoQueue {
 
   }
 
-//  public int dequeue(){
-//
-//    if (stack1 == null){
-//      return null;
-//    }
-//
-//    if (stack1.top == null){
-//      return null;
-//    }
-//
-//    while(stack1.top != null){
-//      value = stack1.pop();
-//      stack2.push(value);
-//    }
-//    returnValue = stack2.pop();
-//
-//    while(stack2 != null){
-//      value = stack2.pop();
-//      stack1.push(value);
-//    }
-//    return returnValue;
-//  }
+  public int dequeue() throws Exception {
+
+    if (stack1.isEmpty()){
+      throw new Exception("Queue is empty");
+    }
+
+    if (stack1.peek() == 0) {
+      throw new Exception("Queue is empty");
+    }
+
+    while(!stack1.isEmpty()){
+      int value;
+      value = stack1.pop();
+      stack2.push(value);
+    }
+    int returnValue = stack2.pop();
+
+    while(stack2 != null){
+      int stack2Value = stack2.pop();
+      stack1.push(stack2Value);
+    }
+    return returnValue;
+  }
 
 
 }
