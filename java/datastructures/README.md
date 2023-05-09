@@ -111,3 +111,4 @@ Find the maximum value stored in the tree. You can assume that the values stored
 
 ## Solution
 I couldn't figure out a solution to today's problem. kind of at a loss with trees currently I am not really understanding how to traverse them.
+123123
