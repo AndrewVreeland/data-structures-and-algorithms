@@ -97,3 +97,17 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 
 ## Solution
 I couldn't figure out a solution to todays problem.
+
+# Lab 16
+Write the following method for the Binary Tree class
+
+find maximum value
+Arguments: none
+Returns: number
+Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## WhiteBoard Process
+![codeChallange16.png](images%2FcodeChallange16.png)
+
+## Solution
+I couldn't figure out a solution to today's problem. kind of at a loss with trees currently I am not really understanding how to traverse them.
