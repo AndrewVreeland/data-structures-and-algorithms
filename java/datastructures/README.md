@@ -111,4 +111,24 @@ Find the maximum value stored in the tree. You can assume that the values stored
 
 ## Solution
 I couldn't figure out a solution to today's problem. kind of at a loss with trees currently I am not really understanding how to traverse them.
-123123
+
+# Lab 16
+Write a function called fizz buzz tree
+Arguments: k-ary tree
+Return: new k-ary tree
+Determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## WhiteBoard Process
+![CC18.png](images%2FCC18.png)
+
+## Solution
+iterate through the tree and enqueue the nodes into a queue.
+step 1 would be to enqueue the root
+step 2 would be to dequeue the root and then enqueu the roots connected nodes. as this is happening the logic for the fizz buzz would go here
+step 3 check to see if the new trees root is null if it is the dequeue node will be the root. else follow through with normal tree building logic
+this would be done in a breadth iteration styled approach
