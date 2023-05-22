@@ -132,3 +132,6 @@ step 1 would be to enqueue the root
 step 2 would be to dequeue the root and then enqueu the roots connected nodes. as this is happening the logic for the fizz buzz would go here
 step 3 check to see if the new trees root is null if it is the dequeue node will be the root. else follow through with normal tree building logic
 this would be done in a breadth iteration styled approach
+
+## CC26
+![cc26.png](images%2Fcc26.png)
