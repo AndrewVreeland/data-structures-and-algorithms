@@ -112,6 +112,7 @@ Find the maximum value stored in the tree. You can assume that the values stored
 ## Solution
 I couldn't figure out a solution to today's problem. kind of at a loss with trees currently I am not really understanding how to traverse them.
 
+<<<<<<< HEAD
 # CC 30
 I'm not sure what the deal is but I had to comment all of my tests out from previous CCs becuase they kept giving me errors.
 This is not the first time this has happened but I am stumped. Anyways after commenting everything else out I could get my new tests to pass.
@@ -119,3 +120,28 @@ This is not the first time this has happened but I am stumped. Anyways after com
 Anyways I implemented A hasmap with its own functionality today and tested each functionality
 
 Set, Get, Has, Keys, and hash.
+=======
+# Lab 16
+Write a function called fizz buzz tree
+Arguments: k-ary tree
+Return: new k-ary tree
+Determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## WhiteBoard Process
+![CC18.png](images%2FCC18.png)
+
+## Solution
+iterate through the tree and enqueue the nodes into a queue.
+step 1 would be to enqueue the root
+step 2 would be to dequeue the root and then enqueu the roots connected nodes. as this is happening the logic for the fizz buzz would go here
+step 3 check to see if the new trees root is null if it is the dequeue node will be the root. else follow through with normal tree building logic
+this would be done in a breadth iteration styled approach
+
+## CC26
+![cc26.png](images%2Fcc26.png)
+>>>>>>> 90afe4cb9441d36b7047b6646376d3c06222fc54
