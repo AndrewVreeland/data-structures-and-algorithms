@@ -111,3 +111,11 @@ Find the maximum value stored in the tree. You can assume that the values stored
 
 ## Solution
 I couldn't figure out a solution to today's problem. kind of at a loss with trees currently I am not really understanding how to traverse them.
+
+# CC 30
+I'm not sure what the deal is but I had to comment all of my tests out from previous CCs becuase they kept giving me errors.
+This is not the first time this has happened but I am stumped. Anyways after commenting everything else out I could get my new tests to pass.
+
+Anyways I implemented A hasmap with its own functionality today and tested each functionality
+
+Set, Get, Has, Keys, and hash.

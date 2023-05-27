@@ -1,9 +1,14 @@
 
 package codechallenges.linkedlist;
 
-public class LinkedList  {
+import com.sun.jdi.Value;
+
+import java.security.Key;
+import java.util.AbstractMap;
+
+public class LinkedList<H extends AbstractMap.SimpleEntry<Key, Value>> {
   public static Node head = null;
-  private LinkedList next;
+  private LinkedList<AbstractMap.SimpleEntry<Key, Value>> next;
 // Node tail =null; optional
 
 
@@ -89,9 +94,9 @@ public class LinkedList  {
 
   }
 
-  public LinkedList zipLists(LinkedList l1, LinkedList l2) {
-    LinkedList dummy = new LinkedList();
-    LinkedList curr = dummy;
+  public LinkedList<AbstractMap.SimpleEntry<Key, Value>> zipLists(LinkedList<AbstractMap.SimpleEntry<Key, Value>> l1, LinkedList<AbstractMap.SimpleEntry<Key, Value>> l2) {
+    LinkedList<AbstractMap.SimpleEntry<Key, Value>> dummy = new LinkedList<AbstractMap.SimpleEntry<Key, Value>>();
+    LinkedList<AbstractMap.SimpleEntry<Key, Value>> curr = dummy;
     while (l1 != null && l2 != null) {
       curr.next = l1;
       l1 = l1.next;
@@ -151,7 +156,7 @@ public class LinkedList  {
 
   public static void main(String[] args) {
     // Example usage
-    LinkedList myLL = new LinkedList();
+    LinkedList<AbstractMap.SimpleEntry<Key, Value>> myLL = new LinkedList<AbstractMap.SimpleEntry<Key, Value>>();
     insertFront(5);
     insertFront(4);
     insertFront(3);
