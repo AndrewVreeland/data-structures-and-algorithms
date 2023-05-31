@@ -183,3 +183,7 @@ return leftwall;
 }
 }
 ![CC28.png](images%2FCC28.png)
+
+CC32
+![CC30.png](images%2FCC30.png)
+We have a hashmap implementation where we are checking the values contained inside of two binary trees. We are to return the values if those values are contained within both trees.

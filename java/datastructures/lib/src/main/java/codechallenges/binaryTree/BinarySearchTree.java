@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //package codechallenges.binaryTree;
 //
 //public class BinarySearchTree extends BinaryTree {
@@ -13,7 +13,6 @@
 //}
 //
 //}
-=======
 package codechallenges.binaryTree;
 
 public class BinarySearchTree extends BinaryTree {
@@ -53,4 +52,4 @@ public static class Node{
   }
 }
 }
->>>>>>> 90afe4cb9441d36b7047b6646376d3c06222fc54
+
