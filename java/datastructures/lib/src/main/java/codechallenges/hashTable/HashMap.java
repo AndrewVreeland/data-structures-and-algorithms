@@ -4,7 +4,6 @@ package codechallenges.hashTable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 
 public class HashMap <Key,Value> {
 
@@ -12,7 +11,7 @@ public class HashMap <Key,Value> {
 
 int size;
 
-public HashMap(int Size){
+public HashMap(){
   if(size< 1){
     throw new IllegalArgumentException("HashMap Size Must Be 1 Or Greater");
   }

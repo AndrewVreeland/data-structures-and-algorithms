@@ -4,7 +4,6 @@ import codechallenges.hashTable.HashMap;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.ArrayList;
 
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
@@ -14,7 +13,7 @@ public class HashMapTest {
   @Test
   public void testGetExistingKey() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(3);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Add key/value pairs to the hash map
     hashMap.add("Apple", 1);
@@ -32,7 +31,7 @@ public class HashMapTest {
   @Test
   public void testSetNewKey() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(3);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Set a new key/value pair
     hashMap.set("Apple", 1);
@@ -47,7 +46,7 @@ public class HashMapTest {
   @Test
   public void testSetExistingKey() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(3);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Add an initial key/value pair
     hashMap.set("Apple", 1);
@@ -64,7 +63,7 @@ public class HashMapTest {
   @Test
   public void testGetNonExistingKey() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(4);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Add some key/value pairs to the hash map
     hashMap.set("Apple", 1);
@@ -80,7 +79,7 @@ public class HashMapTest {
   @Test
   public void testKeys() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(10);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Add some key/value pairs to the hash map
     hashMap.set("Apple", 1);
@@ -99,7 +98,7 @@ public class HashMapTest {
 
   public void testSetCollision() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(10);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Set key/value pairs that will collide
     hashMap.set("Apple", 1);
@@ -123,7 +122,7 @@ public class HashMapTest {
   @Test
   public void testGetCollision() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(10);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Set key/value pairs that will collide
     hashMap.set("Apple", 1);
@@ -144,7 +143,7 @@ public class HashMapTest {
   @Test
   public void testHashInRange() {
     // Create an instance of your hash map implementation
-    HashMap<String, Integer> hashMap = new HashMap<>(10);
+    HashMap<String, Integer> hashMap = new HashMap<>();
 
     // Hash some keys and verify they are in the valid range
     String key1 = "Apple";
