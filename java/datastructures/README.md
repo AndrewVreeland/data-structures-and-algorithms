@@ -187,3 +187,14 @@ return leftwall;
 CC32
 ![CC30.png](images%2FCC30.png)
 We have a hashmap implementation where we are checking the values contained inside of two binary trees. We are to return the values if those values are contained within both trees.
+
+
+CC35
+
+This is the functionality for Graphs that we implemented today. There are tests created to verify the functions work
+
+add node,
+add edge,
+get nodes,
+get neighbors,
+and size.
