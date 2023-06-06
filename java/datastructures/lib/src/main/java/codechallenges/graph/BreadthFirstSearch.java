@@ -5,7 +5,7 @@ import java.util.*;
 
 
 
-public class BreadthFirstSearch<T extends Comparable<? super T>> {
+public class BreadthFirstSearch<T extends Comparable<? super T>>   {
   public List<Vertex<T>> breadthFirst(Graph<T> graph, Vertex<T> startVertex) {
     List<Vertex<T>> visited = new ArrayList<>(); // To store visited vertices
     Queue<Vertex<T>> queue = new LinkedList<>(); // To store vertices to visit

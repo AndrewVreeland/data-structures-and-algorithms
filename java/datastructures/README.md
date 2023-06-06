@@ -202,3 +202,7 @@ and size.
 CC36
 
 today we went over breadth first traversal of a graph! also I got my tests working today for once haha
+
+CC37
+today we went over deailing with an aiports flight path and their respective nodes, returning the weight of each edge as flight costs.
+![CC37.png](images%2FCC37.png)
