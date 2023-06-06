@@ -198,3 +198,7 @@ add edge,
 get nodes,
 get neighbors,
 and size.
+
+CC36
+
+today we went over breadth first traversal of a graph! also I got my tests working today for once haha
