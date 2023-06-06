@@ -2,8 +2,8 @@ package stackAndQueue;
 
 
 import codechallenges.stackAndQueue.Stack;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import static org.testng.AssertJUnit.*;
 
 
@@ -16,8 +16,8 @@ public class StackTest {
     stack.push(2);
     stack.push(3);
 
-    assertFalse(stack.isEmpty());
-    assertEquals(3, stack.peek());
+    Assertions.assertFalse(stack.isEmpty());
+    Assertions.assertEquals(3, stack.peek());
   }
 //
   @Test
@@ -27,16 +27,16 @@ public class StackTest {
     stack.push(2);
     stack.push(3);
 
-    assertEquals(3, stack.pop());
-    assertEquals(2, stack.pop());
-    assertEquals(1, stack.pop());
-    assertTrue(stack.isEmpty());
+    Assertions.assertEquals(3, stack.pop());
+    Assertions.assertEquals(2, stack.pop());
+    Assertions.assertEquals(1, stack.pop());
+    Assertions.assertTrue(stack.isEmpty());
 
     try {
       stack.pop();
-      fail("Expected an Exception to be thrown");
+      Assertions.fail("Expected an Exception to be thrown");
     } catch (Exception e) {
-      assertEquals("Stack is empty", e.getMessage());
+      Assertions.assertEquals("Stack is empty", e.getMessage());
     }
   }
 
@@ -47,21 +47,21 @@ public class StackTest {
     stack.push(2);
     stack.push(3);
 
-    assertEquals(3, stack.peek());
-    assertEquals(3, stack.peek());
-    assertEquals(3, stack.pop());
-    assertEquals(2, stack.peek());
+    Assertions.assertEquals(3, stack.peek());
+    Assertions.assertEquals(3, stack.peek());
+    Assertions.assertEquals(3, stack.pop());
+    Assertions.assertEquals(2, stack.peek());
   }
 //
   @Test
   public void testIsEmpty() throws Exception {
     Stack stack = new Stack();
 
-    assertTrue(stack.isEmpty());
+    Assertions.assertTrue(stack.isEmpty());
     stack.push(1);
-    assertFalse(stack.isEmpty());
+    Assertions.assertFalse(stack.isEmpty());
     stack.pop();
-    assertTrue(stack.isEmpty());
+    Assertions.assertTrue(stack.isEmpty());
   }
 
 

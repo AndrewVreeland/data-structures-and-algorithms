@@ -1,14 +1,15 @@
 package graphs;
 
-import org.testng.annotations.Test;
 
 
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
 import codechallenges.graph.Edge;
 import codechallenges.graph.Graph;
 import codechallenges.graph.Vertex;
-import org.junit.Assert;
-import org.junit.Before;
-import java.util.LinkedList;
+
+import java.util.*;
 
 public class GraphTest {
 
