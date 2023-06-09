@@ -210,3 +210,4 @@ today we went over deailing with an aiports flight path and their respective nod
 
 CC38
 Depth First Traversal
+![CC38.png](images%2FCC38.png)
